@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SmartGrocery</string>
 
-    <string name="title_section1">Add item</string>
+    <string name="title_section1">Items list</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
 
@@ -11,4 +11,10 @@
     <string name="action_example">Example action</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="item_add">Add</string>
+    <string name="title_activity_add_item">AddItemActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="add_new_item">Add new item</string>
 </resources>
