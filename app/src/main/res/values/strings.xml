@@ -17,4 +17,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="add_new_item">Add new item</string>
+    <string name="error_name_value">Field name is empty</string>
+    <string name="hintItemName">Item Name</string>
+    <string name="buttonUpdate">Update</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="title_activity_edit_item">EditItemActivity</string>
+
 </resources>
