@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,12 +55,16 @@ public class ListGroceryListFragment extends Fragment {
                 String grocerylistname = tv_grocerylist_name.getText().toString();
                 String grocerylistdate = tv_grocerylist_date.getText().toString();
 
-                Intent intent = new Intent(getActivity(), FillGroceryListActivity.class);
+                Intent intent = getActivity().getIntent();
                     intent.putExtra("grocerylist_id", grocerylistid);
                     intent.putExtra("grocerylist_name", grocerylistname);
                     intent.putExtra("grocerylist_date", grocerylistdate);
 
-                startActivity(intent);
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                Fragment fragment = new FillGroceryListFragment();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, fragment)
+                        .commit();
             }
         });
 
