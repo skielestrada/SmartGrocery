@@ -98,7 +98,7 @@ public class NavigationDrawerFragment extends Fragment {
 
         menuItems = new String[]{
                 getString(R.string.title_section1),
-//                getString(R.string.title_section2),
+                getString(R.string.title_section2),
 //                getString(R.string.title_section3),
         };
 
@@ -116,7 +116,7 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.id.text1,
                 menuItems
         ));
-        mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
+        mDrawerListView.setItemChecked(0, true);
         return mDrawerListView;
     }
 
