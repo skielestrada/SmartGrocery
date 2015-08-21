@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skielcorp.smartgrocery.grocerylist.ListGroceryListFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="NAME"
+                android:id="@+id/grocerylist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false" />
+
+            <TextView
+                android:text="DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/grocerylist_date"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="149dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GroceryList"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonUpdate"
+            android:id="@+id/buttonEditGroceryList"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</FrameLayout>

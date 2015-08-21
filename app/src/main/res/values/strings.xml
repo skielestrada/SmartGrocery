@@ -1,26 +1,41 @@
 <resources>
+    <string name="hello_world">Hello world!</string>
+
     <string name="app_name">SmartGrocery</string>
 
     <string name="title_section1">Items list</string>
-    <string name="title_section2">Section 2</string>
+    <string name="title_section2">Grocery list</string>
     <string name="title_section3">Section 3</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_example">Example action</string>
-
     <string name="action_settings">Settings</string>
 
-    <string name="item_add">Add</string>
-    <string name="title_activity_add_item">AddItemActivity</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="add_new_item">Add new item</string>
-    <string name="error_name_value">Field name is empty</string>
     <string name="hintItemName">Item Name</string>
+    <string name="add_new_item">Add new item</string>
+
+    <string name="error_name_value">Field name is empty</string>
+    <string name="error_date_value">Field date is empty</string>
+
+    <!-- Buttons -->
+    <string name="buttonAdd">Add</string>
     <string name="buttonUpdate">Update</string>
     <string name="buttonDelete">Delete</string>
+    <string name="buttonOK">OK</string>
+
+    <!-- Grocery List-->
+    <string name="add_new_grocerylist">Add new list</string>
+    <string name="hintGroceryListName">List Name</string>
+    <string name="hintGroceryListDate">Date (YYYY-MM-DD)</string>
+
+
+
+
+    <string name="title_activity_add_item">AddItemActivity</string>
     <string name="title_activity_edit_item">EditItemActivity</string>
+    <string name="title_activity_add_grocery_list">AddGroceryListActivity</string>
+    <string name="title_activity_edit_grocery_list">EditGroceryListActivity</string>
+    <string name="title_activity_fill_grocery_list">FillGroceryListActivity</string>
 
 </resources>

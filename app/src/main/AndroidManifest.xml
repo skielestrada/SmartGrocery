@@ -17,12 +17,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddItemActivity"
+            android:name=".item.AddItemActivity"
             android:label="@string/title_activity_add_item" >
         </activity>
         <activity
-            android:name=".EditItemActivity"
+            android:name=".item.EditItemActivity"
             android:label="@string/title_activity_edit_item" >
+        </activity>
+        <activity
+            android:name=".grocerylist.AddGroceryListActivity"
+            android:label="@string/title_activity_add_grocery_list" >
+        </activity>
+        <activity
+            android:name=".grocerylist.EditGroceryListActivity"
+            android:label="@string/title_activity_edit_grocery_list" >
+        </activity>
+        <activity
+            android:name=".grocerylist.FillGroceryListActivity"
+            android:label="@string/title_activity_fill_grocery_list" >
         </activity>
     </application>
 
