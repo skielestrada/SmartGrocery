@@ -32,10 +32,6 @@
             android:name=".grocerylist.EditGroceryListActivity"
             android:label="@string/title_activity_edit_grocery_list" >
         </activity>
-        <activity
-            android:name=".grocerylist.FillGroceryListFragment"
-            android:label="@string/title_activity_fill_grocery_list" >
-        </activity>
     </application>
 
 </manifest>

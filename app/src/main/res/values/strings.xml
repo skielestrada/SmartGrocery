@@ -17,6 +17,8 @@
 
     <string name="error_name_value">Field name is empty</string>
     <string name="error_date_value">Field date is empty</string>
+    <string name="error_item_listed">This item is already listed</string>
+    <string name="error_item_invalid">The new item must be added first</string>
 
     <!-- Buttons -->
     <string name="buttonAdd">Add</string>
