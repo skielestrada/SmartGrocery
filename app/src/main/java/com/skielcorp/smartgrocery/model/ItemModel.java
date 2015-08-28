@@ -28,6 +28,17 @@ public class ItemModel {
         return CR;
     }
 
+    public Cursor getAllMatchingItems(String toMatch) {
+        String where = TABLE_ITEMS.NAME + " LIKE ?";
+        String[] args = {"%" + toMatch + "%"};
+        String[] columns = {TABLE_ITEMS.ID, TABLE_ITEMS.NAME};
+
+        SQLiteDatabase SQ = model.getReadableDatabase();
+        Cursor CR = SQ.query(TABLE_ITEMS.TABLE_NAME, columns, where, args, null, null, null);
+
+        return CR;
+    }
+
     public void addItem(String name) {
         ContentValues cv = new ContentValues();
         cv.put(TABLE_ITEMS.NAME, name);
