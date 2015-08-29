@@ -28,7 +28,7 @@ public class ListMarketFragment extends Fragment {
         String[] from = {TABLE_MARKETS.ID, TABLE_MARKETS.NAME};
         int[] to = {R.id.market_id,R.id.market_name};
 
-        SimpleCursorAdapter adapter = new SimpleCursorAdapter(getActivity(), R.layout.format_items_list, cursor, from, to, 0);
+        SimpleCursorAdapter adapter = new SimpleCursorAdapter(getActivity(), R.layout.format_markets_list, cursor, from, to, 0);
         marketsList.setAdapter(adapter);
     }
 

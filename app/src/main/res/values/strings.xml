@@ -23,6 +23,7 @@
 
     <!--Markets-->
     <string name="add_market">Add new Market</string>
+    <string name="hintMarketName">Market Name</string>
 
     <string name="error_name_value">Field name is empty</string>
     <string name="error_date_value">Field date is empty</string>
@@ -40,9 +41,6 @@
     <string name="title_activity_add_grocery_list">AddGroceryListActivity</string>
     <string name="title_activity_edit_grocery_list">EditGroceryListActivity</string>
     <string name="title_activity_fill_grocery_list">FillGroceryListActivity</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_add_market">AddMarketActivity</string>
 
 </resources>
