@@ -32,6 +32,10 @@
             android:name=".grocerylist.EditGroceryListActivity"
             android:label="@string/title_activity_edit_grocery_list" >
         </activity>
+        <activity
+            android:name=".market.AddMarketActivity"
+            android:label="@string/title_activity_add_market" >
+        </activity>
     </application>
 
 </manifest>
