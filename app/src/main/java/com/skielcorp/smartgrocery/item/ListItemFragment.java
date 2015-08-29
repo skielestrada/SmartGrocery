@@ -29,7 +29,6 @@ public class ListItemFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        Log.d("SmartGrocery", "onStart");
 
         Cursor cursor = model.getAllItems();
         String[] from = {TABLE_ITEMS.ID, TABLE_ITEMS.NAME};
@@ -43,7 +42,6 @@ public class ListItemFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.layout_items_list, container, false);
-        Log.d("SmartGrocery", "onCreateView");
 
         model = new ItemModel(getActivity());
 

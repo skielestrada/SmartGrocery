@@ -8,10 +8,6 @@ import android.util.Log;
 
 import com.skielcorp.smartgrocery.db.*;
 
-/**
- * Created by ezequiel.estrada on 19/08/2015.
- */
-
 public class ItemModel {
 
     private Model model;

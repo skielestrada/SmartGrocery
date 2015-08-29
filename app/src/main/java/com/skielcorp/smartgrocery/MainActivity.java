@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 
 import com.skielcorp.smartgrocery.grocerylist.ListGroceryListFragment;
 import com.skielcorp.smartgrocery.item.ListItemFragment;
+import com.skielcorp.smartgrocery.market.ListMarketFragment;
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -56,6 +57,10 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 1:
                 fragment = new ListGroceryListFragment();
+                break;
+            case 2:
+                fragment = new ListMarketFragment();
+                break;
         }
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
