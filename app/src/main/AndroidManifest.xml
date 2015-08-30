@@ -36,6 +36,10 @@
             android:name=".market.AddMarketActivity"
             android:label="@string/title_activity_add_market" >
         </activity>
+        <activity
+            android:name=".market.EditMarketActivity"
+            android:label="@string/title_activity_edit_market" >
+        </activity>
     </application>
 
 </manifest>

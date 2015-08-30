@@ -42,5 +42,6 @@
     <string name="title_activity_edit_grocery_list">EditGroceryListActivity</string>
     <string name="title_activity_fill_grocery_list">FillGroceryListActivity</string>
     <string name="title_activity_add_market">AddMarketActivity</string>
+    <string name="title_activity_edit_market">EditMarketActivity</string>
 
 </resources>
