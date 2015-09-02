@@ -47,7 +47,7 @@ public class EditMarketActivity extends Activity {
         }
     }
 
-    public void deleteMerket(View view) {
+    public void deleteMarket(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Are you sure?");
         builder.setNegativeButton("NO", null);

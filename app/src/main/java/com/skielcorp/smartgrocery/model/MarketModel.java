@@ -36,4 +36,26 @@ public class MarketModel {
         Log.d(TAG, "New market added: " + name);
     }
 
+    public void updateMarket(String id, String name) {
+        ContentValues cv = new ContentValues();
+            cv.put(TABLE_MARKETS.NAME, name);
+
+        String where = TABLE_MARKETS.ID + " LIKE ?";
+        String[] args = {id};
+
+        SQLiteDatabase SQ = model.getWritableDatabase();
+            SQ.update(TABLE_MARKETS.TABLE_NAME, cv, where, args);
+
+        Log.d(TAG, "Market info updated: " + id);
+    }
+
+    public void deleteMarket(String id) {
+        String where = TABLE_MARKETS.ID + " = ?";
+        String[] args = {id};
+
+        SQLiteDatabase SQ = model.getWritableDatabase();
+            SQ.delete(TABLE_MARKETS.TABLE_NAME, where, args);
+
+        Log.d(TAG, "Item deleted: " + id);
+    }
 }

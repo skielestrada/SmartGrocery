@@ -7,9 +7,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 
 import com.skielcorp.smartgrocery.R;
 import com.skielcorp.smartgrocery.db.TABLE_MARKETS;
@@ -41,6 +44,19 @@ public class ListMarketFragment extends Fragment {
         model = new MarketModel(getActivity());
 
         marketsList = (ListView) view.findViewById(R.id.listView_Martkets);
+        marketsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                TextView market_id = (TextView) view.findViewById(R.id.market_id);
+                TextView market_name = (TextView) view.findViewById(R.id.market_name);
+
+                Intent intent = new Intent(getActivity(), EditMarketActivity.class);
+                intent.putExtra("market_id", market_id.getText().toString());
+                intent.putExtra("market_name", market_name.getText().toString());
+
+                startActivity(intent);
+            }
+        });
 
         Button button = (Button) view.findViewById(R.id.button_addMarket);
             button.setOnClickListener(new View.OnClickListener() {
