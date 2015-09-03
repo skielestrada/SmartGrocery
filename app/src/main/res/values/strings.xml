@@ -6,6 +6,7 @@
     <string name="title_section1">Items list</string>
     <string name="title_section2">Grocery list</string>
     <string name="title_section3">Markets list</string>
+    <string name="title_section4">Carts list</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -25,6 +26,9 @@
     <string name="add_market">Add new Market</string>
     <string name="hintMarketName">Market Name</string>
 
+    <!--Carts-->
+    <string name="add_cart">Add new Cart</string>
+
     <string name="error_name_value">Field name is empty</string>
     <string name="error_date_value">Field date is empty</string>
     <string name="error_item_listed">This item is already listed</string>
@@ -43,5 +47,8 @@
     <string name="title_activity_fill_grocery_list">FillGroceryListActivity</string>
     <string name="title_activity_add_market">AddMarketActivity</string>
     <string name="title_activity_edit_market">EditMarketActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
